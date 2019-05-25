@@ -14,7 +14,7 @@
 body{
   
 }
-/****** navbar  test**/
+/****** navbar  **/
 
 .navbar-default
 {
@@ -113,9 +113,7 @@ body{
 	box-sizing:border-box;
 }
 
-.jabe1{
-	
-}
+
 
 .text1 h2{
 	font-size:16px;
@@ -141,7 +139,6 @@ body{
     text-align: center;
     font-size: 18px;
     background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -155,4 +152,83 @@ body{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+}
+
+.slider{
+	background-color:#fff;
+	padding: 15px 0 0 0;
+}
+
+#slider{
+	width:86%;
+	height:260px;
+	position:relative;
+	margin:20px auto;
+	overflow:hidden;
+	box-shadow:0 0 7px #333;
+	padding:0;
+}
+
+#slider img{
+	width:100%;
+}
+
+.slide{
+	display:none;
+}
+
+.slide.active{
+	display:block;
+}
+
+.text{
+	color:#fff;
+	position:absolute;
+	bottom:20px;
+	text-align:center;
+	width:100%;
+}
+
+.prev,.next{
+	color:#fff;
+	text-decoration:none;
+	font-size:40px;
+	position:absolute;
+	top:50%;
+	transform: translate(0,-50%);
+}
+
+.prev{
+	right:5px;
+}
+
+.next{
+	left:5px;
+}
+
+#dots{
+	text-align:center;
+}
+
+.dot{
+	display:inline-block;
+	width:9px;
+	height:9px;
+	border-radius:50%;
+	background-color:#fff;
+	border: 1px solid #8e8e94;
+}
+
+.dot.active{
+	background-color: orange;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
